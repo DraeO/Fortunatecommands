@@ -1,0 +1,34 @@
+package me.draeprogs.customcommands.commands;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import me.draeprogs.customcommands.Main;
+import net.md_5.bungee.api.ChatColor;
+
+public class Commands implements CommandExecutor{
+private Main plugin = Main.getPlugin(Main.class);
+	
+	String prefix = plugin.getConfig().getString("broadcaster.prefix");
+
+	public Commands(Main passedPlugin) {
+		this.plugin = passedPlugin;
+	}
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+		Player player = (Player) sender;
+
+		if (sender instanceof Player) {
+			player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&5&lDiscord link &8&l// &d&lhttps://discord.gg/CYUxZF6"));
+		}
+		else {
+			sender.sendMessage("Discord link // https://discord.gg/CYUxZF6");
+		}
+
+		return false;
+	}
+
+}

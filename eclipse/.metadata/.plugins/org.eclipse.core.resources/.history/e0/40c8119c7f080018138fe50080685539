@@ -1,0 +1,19 @@
+#
+#        Name        
+#  Author Draeprogs  
+#
+
+broadcaster:
+  prefix: '&4Draeprogs broadcaster // '
+  message: '&cDraeprogs broadcaster message'
+ #Delay in seconds
+  delay: 5
+  
+discord:
+  message: '&5&lDiscord link &8&l// &d&lhttps://discord.gg/CYUxZF6'
+  
+webstore:
+  message: '&5&lWebstore link &8&l// &d&lhttps://fortunate.buycraft.net/'
+  
+website:
+  message: '&5&lWebsite link &8&l// &d&lComing soon!'

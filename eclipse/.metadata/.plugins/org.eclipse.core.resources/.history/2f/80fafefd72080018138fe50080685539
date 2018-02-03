@@ -1,0 +1,25 @@
+package me.draeprogs.customcommands.broadcaster;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import me.draeprogs.customcommands.Main;
+
+public class Messager extends BukkitRunnable{
+	
+	Main plugin;
+	
+	public Messager (Main plugin) {
+		this.plugin = plugin;
+	}
+
+	@Override
+	public void run() {
+		
+		Bukkit.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&4Broadcast message // This is part of Drae's custom plugin, broadcaster will be fixed soon"));
+	}
+	
+	
+
+}

@@ -1,0 +1,17 @@
+package me.draeprogs.customcommands.broadcaster;
+
+import org.bukkit.scheduler.BukkitRunnable;
+
+public class Messager extends BukkitRunnable{
+	
+
+	@Override
+	public void run() {
+		
+		
+		
+	}
+	
+	
+
+}

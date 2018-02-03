@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
+<fullyQualifiedTypeName name="org.bukkit.command.CommandExecutor"/>
+<fullyQualifiedTypeName name="org.bukkit.command.CommandSender"/>
+<fullyQualifiedTypeName name="me.draeprogs.customcommands.commands.store"/>
+<fullyQualifiedTypeName name="org.bukkit.configuration.file.FileConfiguration"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="net.md_5.bungee.api.ChatColor"/>
+<fullyQualifiedTypeName name="org.bukkit.configuration.file.YamlConfiguration"/>
+<fullyQualifiedTypeName name="org.bukkit.scheduler.BukkitRunnable"/>
+<fullyQualifiedTypeName name="me.draeprogs.customcommands.Main"/>
+<fullyQualifiedTypeName name="org.bukkit.Bukkit"/>
+<fullyQualifiedTypeName name="org.bukkit.ChatColor"/>
+<fullyQualifiedTypeName name="me.draeprogs.customcommands.broadcaster.Messager"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="me.draeprogs.customcommands.commands.ConfigManager"/>
+</qualifiedTypeNameHistroy>

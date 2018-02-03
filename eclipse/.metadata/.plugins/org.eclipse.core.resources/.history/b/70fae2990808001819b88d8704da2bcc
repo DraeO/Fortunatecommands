@@ -1,0 +1,56 @@
+package me.draeprogs.customcommands;
+
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import me.draeprogs.customcommands.broadcaster.Messager;
+import me.draeprogs.customcommands.commands.Commands;
+import me.draeprogs.customcommands.commands.ConfigManager;
+import me.draeprogs.customcommands.commands.store;
+import me.draeprogs.customcommands.commands.website;
+
+public class Main extends JavaPlugin{
+	private ConfigManager cfgm;
+
+	Messager messager;
+
+	public void onEnable() {
+
+
+		this.getLogger().info("(!) Draeprogs plugin Enabled");
+		this.getCommand("discord").setExecutor(new Commands(this));
+		this.getCommand("website").setExecutor(new website(this));
+		this.getCommand("store").setExecutor(new store(this));
+		
+		ConfigManager.getInstance().setup(this);
+		messager = new Messager(this);
+
+		messager.runTaskTimer(this, 0, 5 * 20);
+		
+		ConfigManager.getInstance().set("broadcast.", true);
+        ConfigManager.getInstance().set("broadcast.prefix", "&4Draeprogs // &c");
+        ConfigManager.getInstance().set("broadcast.delay", 5);
+        ConfigManager.getInstance().save();
+        Bukkit.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("broadcaster.prefix");));
+	}
+
+	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+
+
+		return true;
+	}
+
+	public void onDisable() {
+		this.getLogger().info("(!) Draeprogs plugin Disabled");
+	}
+
+
+	public void loadconfig() {
+		getConfig().options().copyDefaults(true);
+		saveConfig();
+	}
+
+}

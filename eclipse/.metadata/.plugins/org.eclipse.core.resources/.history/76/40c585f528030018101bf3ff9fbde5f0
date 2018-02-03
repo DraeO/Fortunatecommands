@@ -1,0 +1,9 @@
+name: Draeprogs
+version: 1.0
+main: me.draeprogs.customcommands.Main
+description: Plugin created by Its_Destiny / Drae
+
+commands:
+    discord:
+        usage: /<command>
+    website:

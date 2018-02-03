@@ -1,0 +1,5 @@
+package me.draeprogs.customcommands.broadcaster;
+
+public class Messager {
+
+}
