@@ -9,7 +9,6 @@ import me.draeprogs.customcommands.Main;
 import net.md_5.bungee.api.ChatColor;
 
 public class store implements CommandExecutor{
-
 	private Main plugin = Main.getPlugin(Main.class);
 
 	String message = plugin.getConfig().getString("webstore.message");
@@ -26,7 +25,6 @@ public class store implements CommandExecutor{
 			player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
 		}
 		else {
-			sender.sendMessage("Not avaliable in console");
 		}
 
 		return false;

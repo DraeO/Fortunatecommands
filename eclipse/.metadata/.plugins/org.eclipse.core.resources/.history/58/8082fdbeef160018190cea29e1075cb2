@@ -1,0 +1,32 @@
+############################################################
+# +------------------------------------------------------+ #
+# |                 FortunateCommands                    | #
+# +------------------------------------------------------+ #
+############################################################
+
+# - Indents must be correct, otherwise yaml doesn't register
+# - Do not use tabs, only use spaces
+# - if you wish to use any ' in your messages (eg. they're)
+# change the surrounding quotes to " (eg. "They're")
+
+broadcaster:
+  enabled: true # true/false
+  prefix: '&4[Broadcaster]: '
+  message: '&cFortunatecommands broadcaster message. Edit this in DraeProgs config.yml'
+  delay: 10 # delay in minutes
+  
+# /discord text here
+discord:
+  message: '&5&lDiscord link &8&l// &d&lhttps://discord.gg/CYUxZF6'
+  
+# /webstore (and /store) text here
+webstore:
+  message: '&5&lWebstore link &8&l// &d&lhttps://fortunate.buycraft.net/'
+  
+# /website text here
+website:
+  message: '&5&lWebsite link &8&l// &d&lhttps://fortunatesite.000webhostapp.com/'
+  
+# Thank you for downloading and supporting this plugin!
+# Please rate and leave any suggestions on my discord: Drae#0940
+# https://www.spigotmc.org/resources/fortunatecommands.52781/

@@ -1,5 +1,5 @@
 name: Draeprogs
-version: 1.0
+version: 1.2.0
 main: me.draeprogs.customcommands.Main
 description: Plugin created by Its_Destiny / DraeProgs
 author: Its_Destiny/DraeProgs
@@ -12,6 +12,7 @@ commands:
     store:
         description: Shows the server's Webstore link
         aliases: [webstore]
-    draeprogs:
+    fortunatecommands:
         description: Shows the author of the plugin.
-        aliases: [dpauthor]
+        usage: /<command> version Shows the version
+        aliases: [dpauthor, draeprogs, fcreload, fc]

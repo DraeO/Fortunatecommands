@@ -1,0 +1,24 @@
+#  Fortunatecommands        
+#  Author Draeprogs  
+
+broadcaster:
+  enabled: true
+  prefix: '&4Draeprogs broadcaster // '
+  message: '&cDraeprogs broadcaster message'
+  delay: 3600 # delay in seconds
+  
+# /discord text here
+discord:
+  message: '&5&lDiscord link &8&l// &d&lhttps://discord.gg/CYUxZF6'
+  
+# /webstore (and /store) text here
+webstore:
+  message: '&5&lWebstore link &8&l// &d&lhttps://fortunate.buycraft.net/'
+  
+# /website text here
+website:
+  message: '&5&lWebsite link &8&l// &d&lhttps://fortunatesite.000webhostapp.com/'
+  
+# thank you for downloading and supporting this plugin!
+# please rate and leave any suggestions at https://www.spigotmc.org/resources/fortunatecommands.52781/
+# or add me on discord: Drae#0940

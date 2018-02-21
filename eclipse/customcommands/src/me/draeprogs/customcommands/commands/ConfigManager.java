@@ -26,25 +26,26 @@ public class ConfigManager {
 
 		configfile = new File(plugin.getDataFolder(), "config.yml");
 
-		if (!configfile.exists()) {
-			try {
-				configfile.createNewFile();
-				plugin.getConfig().set("broadcaster.prefix", "&4Draeprogs broadcaster // ");
-				plugin.getConfig().set("broadcaster.message", "&cDraeprogs broadcaster message");
-				plugin.getConfig().set("broadcaster.delay", 60);
+		//if (!configfile.exists()) {
+			//try {
+				//configfile.createNewFile();
+				//plugin.getConfig().set("broadcaster.enabled", true);
+				//plugin.getConfig().set("broadcaster.prefix", "&4Draeprogs broadcaster //");
+				//plugin.getConfig().set("broadcaster.message", "&cDraeprogs broadcaster message");
+				//plugin.getConfig().set("broadcaster.delay", 3600);
 
-				plugin.getConfig().set("discord.message", "&5&lDiscord link &8&l// &d&lhttps://discord.gg/CYUxZF6");
+				//plugin.getConfig().set("discord.message", "&5&lDiscord link &8&l// &d&lhttps://discord.gg/CYUxZF6");
 				
-				plugin.getConfig().set("webstore.message", "&5&lWebstore link &8&l// &d&lhttps://fortunate.buycraft.net/");
+				//plugin.getConfig().set("webstore.message", "&5&lWebstore link &8&l// &d&lhttps://fortunate.buycraft.net/");
 				
-				plugin.getConfig().set("website.message", "&5&lWebsite link &8&l// &d&lComing soon!");
-				plugin.saveConfig();
+				//plugin.getConfig().set("website.message", "&5&lWebsite link &8&l// &d&lComing soon!");
+				//plugin.saveConfig();
 
-				Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "The config.yml file has been created");
-			} catch (IOException e) {
-				Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.RED + "Could not create the config.yml file");
-			}
-		}
+				//Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "The config.yml file has been created");
+			//} catch (IOException e) {
+				//Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.RED + "Could not create the config.yml file");
+			//}
+		//}
 
 		cfg = YamlConfiguration.loadConfiguration(configfile);
 	}
@@ -65,6 +66,7 @@ public class ConfigManager {
 
 	public void reloadConfig() {
 		cfg = YamlConfiguration.loadConfiguration(configfile);
+		plugin.reloadConfig();
 		Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.BLUE + "The config.yml file has been reload");
 
 	}

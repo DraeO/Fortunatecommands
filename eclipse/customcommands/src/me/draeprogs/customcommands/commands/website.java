@@ -25,7 +25,6 @@ public class website implements CommandExecutor{
 			player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
 		}
 		else {
-			sender.sendMessage("Not avaliable in console");
 		}
 
 		return false;

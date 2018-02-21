@@ -20,16 +20,12 @@ public class Commands implements CommandExecutor{
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 		Player player = (Player) sender;
-		
-		if(args.length == 1) {
-			if (sender instanceof Player) {
-				player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
-			}
-			else {
-				sender.sendMessage("Not avaliable in console");
-			}
+
+		if (sender instanceof Player) {
+			player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
 		}
-		
+		else {
+		}
 
 		return false;
 	}
