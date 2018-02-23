@@ -45,6 +45,8 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\User\Desktop\Custom Plugins\Fortunatecommands-1.2.0.jar"/>
+			<item value="C:\Users\User\Desktop\Custom Plugins\Fortunatecommands-1.2.jar"/>
 			<item value="C:\Users\User\Desktop\Custom Plugins\Fortunatecommands-1.1.jar"/>
 			<item value="C:\Users\User\Desktop\Custom Plugins\Fortunatecommands-1.0.jar"/>
 			<item value="C:\Users\User\Desktop\Custom Plugins\Draeprogs - Fortunate-1.0.jar"/>
